@@ -13,6 +13,10 @@ receipts = [
 ]
 
 # Route to get all receipts
+@app.route('/', methods=['GET'])
+def get_receipts():
+    return "Yooo"
+
 @app.route('/receipts', methods=['GET'])
 def get_receipts():
     return jsonify(receipts)
