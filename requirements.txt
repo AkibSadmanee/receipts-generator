@@ -21,10 +21,6 @@ cffi
 charset-normalizer
 cloudpickle
 comm
-conda
-conda-content-trust
-conda-package-handling
-conda_package_streaming
 conllu
 contourpy
 cryptography
