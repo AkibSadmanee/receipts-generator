@@ -14,7 +14,7 @@ receipts = [
 
 # Route to get all receipts
 @app.route('/', methods=['GET'])
-def get_receipts():
+def landing_page():
     return "Yooo"
 
 @app.route('/receipts', methods=['GET'])
