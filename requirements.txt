@@ -1,2 +1,4 @@
-flask
+flask-restful 
+flask 
+flask-cors 
 gunicorn
