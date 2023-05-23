@@ -21,7 +21,7 @@ def landing_page():
 
 @app.route('/receipts', methods=['GET'])
 def get_receipts():
-    return jsonify(receipts[0])
+    return jsonify(receipts)
 
 # Route to get a specific receipt by ID
 @app.route('/receipts/<int:rec_id>', methods=['GET'])
