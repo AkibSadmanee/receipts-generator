@@ -5,13 +5,10 @@ app = Flask(__name__)
 cors = CORS(app)  
 
 receipts = [
-    {'id': 1, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/1.jpg', 'store': 'Target', 'total': '0.41', 'status': False, 'date': '05/12/2018'},
-    {'id': 2, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/2.jpg', 'store': 'Walmart', 'total': '20.67', 'status': False, 'date': '-/-/-'},
-    {'id': 3, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/3.jpg', 'store': 'Safeway', 'total': '28.52', 'status': False, 'date': '08/04/2022'},
-    {'id': 4, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/4.jpg', 'store': 'Walmart', 'total': '54.63', 'status': True, 'date': '12/19/2020'},
-    {'id': 5, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/5.jpg', 'store': 'Walmart', 'total': '74.05', 'status': True, 'date': '10/20/2020'},
-    {'id': 6, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/6.jpg', 'store': 'Walmart', 'total': '21.08', 'status': True, 'date': '08/04/2022'},
-    {'id': 7, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/7.jpg', 'store': 'Target', 'total': '69.69', 'status': True, 'date': '08/30/2020'}
+    {'id': 1, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/1.jpg', 'store': 'Target', 'total': '0.41', 'status': False, 'date': '05/12/2018', 'logo': f'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/logo/target.png'},
+    {'id': 2, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/2.jpg', 'store': 'Walmart', 'total': '20.67', 'status': False, 'date': '--/--/----', 'logo': f'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/logo/walmart.png'},
+    {'id': 3, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/3.jpg', 'store': 'Safeway', 'total': '28.52', 'status': False, 'date': '08/04/2022', 'logo': f'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/logo/safeway.png'},
+    {'id': 4, 'url': 'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/images/4.jpg', 'store': '------', 'total': '-.--', 'status': True, 'date': '--/--/----', 'logo': 'https://s3.amazonaws.com/appgyver.assets/composer3/images/image_placeholder.png'},
 ]
 
 # Route to get all receipts
