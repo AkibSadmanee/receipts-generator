@@ -16,15 +16,5 @@ receipts = [
 def get_receipts():
     return jsonify(receipts)
 
-
-# Route to get a specific receipt by ID
-@app.route('/receipts/<int:rec_id>', methods=['GET'])
-def get_receipt(rec_id):
-    receipt = next((rec for rec in receipts if rec['id'] == rec_id), None)
-    if receipt:
-        return jsonify(receipt)
-    else:
-        return jsonify({"message": "Receipt not found"}), 404
-
 if __name__ == '__main__':
     app.run(debug=False)
