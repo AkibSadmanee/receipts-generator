@@ -16,5 +16,14 @@ receipts = [
 def get_receipts():
     return jsonify(receipts)
 
+#curl -X POST -H 'Content-Type: application/json' -d '{"key": "value"}' http://127.0.0.1:5000/test
+@app.route('/test', methods=['POST'])
+def get_abcd():
+    print(request.get_json())
+    return 'success!!'
+
+
 if __name__ == '__main__':
     app.run(debug=False)
+
+
