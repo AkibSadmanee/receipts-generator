@@ -39,8 +39,8 @@ def get_logo(company_name):
     url = f'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/static/logos/{search_name}.jpg'
     # Update an existing user with the provided user ID
     if max(j_sims) > 0.55:
-        return jsonify({'url': url})
-    return jsonify({'url': "https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/static/LogoHead.png"})
+        return jsonify(url)
+    return jsonify("https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/static/LogoHead.png")
 
 if __name__ == '__main__':
     app.run(debug=False)
