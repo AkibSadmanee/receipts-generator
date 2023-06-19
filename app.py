@@ -35,7 +35,7 @@ def get_logo(company_name):
     processed_company_name = re.sub('[^a-zA-Z0-9]', '', company_name.lower())
     j_sims = [jaccard_similarity(processed_company_name, s) for s in stores]
     search_name = stores[j_sims.index(max(j_sims))]
-
+    print(search_name)
     url = f'https://raw.githubusercontent.com/AkibSadmanee/receipts-generator/main/static/logos/{search_name}.jpg'
     # Update an existing user with the provided user ID
     if max(j_sims) > 0.55:
